@@ -4,7 +4,7 @@ A basic to-do app build using HTML, CSS and Javascript; used to add/delete tasks
 Previously added tasks will be stored and retrieved through local storage.
 
 ### Screenshot
-![Preview image(https://github.com/aarya-03/To-do-App/blob/main/img/preview.png)
+![Preview image](https://github.com/aarya-03/To-do-App/blob/main/img/preview.png)
 
 ### Installation
 ```

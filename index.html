@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App</title>
+    <link href="index.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a3311d6b51.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="title"><mark>TO-DO App</mark></div>
+    <div class="container">
+        <section id="form">
+            <!-- <form> -- If <form> is present then page will get refreshed after clicking on submit button -->
+            <div class="form-group">
+                <label for="title">Task title</label>
+                <input type="text" id="title">
+            </div>
+            <div class="form-group">
+                <label for="description">Task description</label>
+                <textarea id="description" name="description" rows="4" cols="40"></textarea>
+            </div>
+            <button type="submit" id="addItemBtn">Add to list</button>
+            <button type="submit" id="clearBtn" onclick="clearList()">Clear List</button>
+            <!-- </form> -->
+        </section>
+    </div>
+    <section id="list">
+        <h2 class="tHeading">Your Tasks</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Task No.</th>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <!-- <tr>
+                    <td>1</td>
+                    <td>Homework</td>
+                    <td>Solve Mathematics questions</td>
+                    <td>
+                        <button class="taskDelete" onclick="taskDelete()">Delete</button>
+                    </td>
+                </tr> -->
+            </tbody>
+        </table>
+    </section>
+    <script src="index.js"></script>
+</body>
+
+</html>
